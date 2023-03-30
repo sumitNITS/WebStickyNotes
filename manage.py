@@ -7,7 +7,7 @@ def main():
         from django.core.management import execute_from_command_line
     except ImportError as exc:
         raise ImportError(
-            "Django import Failed!. Are you sure it's installed and "
+            "Django import Failed! Are you sure it's installed and "
             "available on your PYTHONPATH environment variable? Is your "
             "virtual environment active?"
         ) from exc
