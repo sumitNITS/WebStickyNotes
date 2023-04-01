@@ -8,13 +8,13 @@
 - ✔️ the note
 -  Deleting the note 🗑️
 
-This Sticky Notes app is similar to Windows Sticky Notes App and follows Reverse chronological order. Only exception that once NOTE is added you can't edit it. Alternatively, you can add the NOTE again with latest data and remove the old one.
+This Sticky Notes app is similar to Windows Sticky Notes App and follows Reverse chronological order for taking notes. Only exception that once NOTE is added you can't edit it. Alternatively, you can add the NOTE again with your latest data and remove the old one.
 
 ### Instructions to run this project locally
 
 - Create a project directory called Sticky Notes
 - cd to Sticky Notes
-- clone this project using the command
+- Clone this project using the command
 ```bash
 git clone https://github.com/sumitNITS/WebStickyNotes.git
 ```
@@ -35,7 +35,7 @@ python -m virtualenv <name>
 ```bash
 pip install django
 ```
--- Run the below commands
+- Run the below commands
 ```bash 
 python manage.py makemigrations notes
 ```
