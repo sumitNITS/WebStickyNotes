@@ -1,0 +1,81 @@
+{% extends 'notes/base.html' %}
+{% block title %}
+<title>Sticky Notes</title>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <button id="theme-toggle" class="btn btn-sm btn-outline-dark float-right">
+    <i class="fas fa-moon"></i> Dark Mode
+  </button>
+  <!-- title row section -->
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="page-header">
+        <h1>
+          Sticky Notes
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- add note row section -->
+  <div class="row">
+    <div class="col-lg-9">
+      <form method="post" action="{% url 'notes:add' %}">
+        {% csrf_token %}
+        <div class="form-row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" name="title" placeholder="Take a note..." required>
+          </div>
+          <div class="col-md-6">
+            <button type="submit" name="submit" class="btn btn-outline-primary">
+              Add Me
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <!-- note list row section-->
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="list-group">
+        {% for note in note_list %}
+        <div class="list-group-item {% if note.isCompleted %} note-complete {% endif %}">
+          <form style="display: inline;" method="post" action="{% url 'notes:update' note.id %}">
+            {% csrf_token %}
+            <input type="checkbox" name="isCompleted" onchange="this.form.submit()" {% if note.isCompleted %} checked
+              {% endif %} class="note-status-checkbox"
+              title="{% if not note.isCompleted %} mark as done {% else %} mark undone {% endif %}">
+          </form>
+          <div class="note-title">{{ note.title }}</div>
+          <div class="note-options">
+            <a href="{% url 'notes:edit' note.id %}" title="Edit">
+              <i class="far fa-edit"></i>
+            </a>
+            <a href="{% url 'notes:delete' note.id %}" title="Delete">
+              <i class="far fa-trash-alt"></i>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JavaScript for theme toggle button section -->
+<script>
+  function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+    const button = document.getElementById("theme-toggle");
+    if (body.classList.contains("dark-mode")) {
+      button.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    } else {
+      button.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+    }
+  }
+  const themeToggle = document.getElementById("theme-toggle");
+  themeToggle.addEventListener("click", toggleTheme);
+</script>
+{% endblock %}
