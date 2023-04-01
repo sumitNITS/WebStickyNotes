@@ -1,0 +1,95 @@
+/* Header styling */
+.page-header {
+  margin-top: 10px;
+}
+
+/* Trash icon styling */
+.fa-trash-alt {
+  color: rgb(66, 80, 201);
+  float: right;
+  cursor: pointer;
+}
+
+/* Completed note styling */
+.note-complete {
+  text-decoration: line-through;
+}
+
+/* Checkbox styling */
+.note-status-checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Light mode styles */
+body {
+  background-color: #fff;
+  color: #444;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.btn-outline-dark:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn-outline-primary.dark-mode {
+  border-color: #4dd0e1;
+  color: #4dd0e1;
+}
+
+.btn-outline-primary.dark-mode:hover {
+  background-color: #4dd0e1;
+  border-color: #4dd0e1;
+  color: #fff;
+}
+
+.btn-outline-primary.dark-mode:focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 208, 225, 0.5);
+}
+
+.btn-outline-dark.dark-mode {
+  border-color: #4dd0e1;
+  color: #4dd0e1;
+}
+
+.btn-outline-dark.dark-mode:hover {
+  background-color: #4dd0e1;
+  border-color: #4dd0e1;
+  color: #fff;
+}
+
+.btn-outline-dark.dark-mode:focus {
+  box-shadow: 0 0 0 0.2rem rgba(77, 208, 225, 0.5);
+}

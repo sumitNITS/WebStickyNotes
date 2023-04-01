@@ -1,0 +1,23 @@
+.page-header {
+  margin-top: 10px;
+}
+body {
+  background-color: #f8f540;
+}
+.fa-trash-alt {
+  color: rgb(41, 60, 231);
+  float: right;
+  cursor: pointer;
+}
+.note-complete {
+  text-decoration: line-through;
+}
+.note-status-checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* .dark-mode {
+  background-color: #222;
+  color: #fff;
+} */
