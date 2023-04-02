@@ -59,7 +59,7 @@ docker build . -t <image-name>
 ```bash
 docker run -d -p <port>:8000 --name stickynotes <image-name> 
 ```
-Now access Sticky Notes application using localhost:<port> OR <ip-of-machine>:<port> 🚀
+Now access Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
 
 
 
