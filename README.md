@@ -48,7 +48,7 @@ python manage.py runserver
 
 Now visit the URL http://127.0.0.1:8000/ and explore the Sticky Notes application 🚀
 
-### Instructions to run this project using Docker container
+### Instructions to run this project as Docker container
 
 - cd to WebStickyNotes
 - Build an image out of Dockerfile using the command 
