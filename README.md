@@ -46,7 +46,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Now visit the URL http://127.0.0.1:8000/ and explore the application 🚀
+Now visit the URL http://127.0.0.1:8000/ and explore the Sticky Notes application 🚀
 
 ### Instructions to run this project using Docker container
 
@@ -59,7 +59,7 @@ docker build . -t <image-name>
 ```bash
 docker run -d -p <port>:8000 --name stickynotes <image-name> 
 ```
-Now access Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
+Now access the Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
 
 
 
