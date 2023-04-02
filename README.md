@@ -48,6 +48,20 @@ python manage.py runserver
 
 Now visit the URL http://127.0.0.1:8000/ and explore the application 🚀
 
+### Instructions to run this project using Docker container
+
+- cd to WebStickyNotes
+- Build an image out of Dockerfile using the command 
+```bash
+docker build . -t <image-name>
+```
+- Start the container with the docker image using the command
+```bash
+docker run -d -p <port>:8000 --name stickynotes <image-name> 
+```
+Now access Sticky Notes application using localhost:<port> OR <ip-of-machine>:<port> 🚀
+
+
 
 
 
