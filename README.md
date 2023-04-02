@@ -2,13 +2,13 @@
 
 ![sticky notes](https://user-images.githubusercontent.com/37767537/229308712-08a031f1-5670-44b4-875d-ca4b5d37ca6f.png)
 
-### Few features of this project include
+### A Few features of this project include
 
 - Adding the note ✍️
 - ✔️ the note
 -  Deleting the note 🗑️
 
-This Sticky Notes app is similar to Windows Sticky Notes App and follows Reverse chronological order for taking notes. Only exception that once NOTE is added you can't edit it. Alternatively, you can add the NOTE again with your latest data and remove the old one.
+This Sticky Notes app is similar to Windows Sticky Notes App and follows Reverse chronological order for taking notes. The only exception is that once NOTE is added you can't edit it. Alternatively, you can add the NOTE again with your latest data and remove the old one.
 
 ### Instructions to run this project locally
 
