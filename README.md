@@ -61,6 +61,15 @@ docker run -d -p <port>:8000 --name stickynotes <image-name>
 ```
 Now access the Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
 
+### Instructions to run this project using dockerhub image
+
+- Access the Sticky Notes application using the command 
+```bash
+docker run -d -p <port>:8000 --name stickynotes sumit0058/stickynotes:1.0
+```
+
+
+
 
 
 
