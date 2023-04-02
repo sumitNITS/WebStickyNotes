@@ -1,4 +1,4 @@
-## A Web Based Sticky Notes 
+## A Web-Based Sticky Notes 
 
 ![sticky notes](https://user-images.githubusercontent.com/37767537/229308712-08a031f1-5670-44b4-875d-ca4b5d37ca6f.png)
 
