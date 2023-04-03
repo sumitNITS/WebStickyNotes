@@ -84,6 +84,8 @@ kubectl apply -f stickynotes-service.yml
 kubectl port-forward service/stickynotes-deployment <port>:8000
 ```
 
+Now access the Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
+
 
 
 
