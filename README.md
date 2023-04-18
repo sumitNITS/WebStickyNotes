@@ -71,29 +71,6 @@ Now access the Sticky Notes application using "localhost":"port" OR "ip-of-machi
 ```bash
 docker run -d -p <port>:8000 --name stickynotes sumit0058/stickynotes:1.0
 ```
-### Instructions to run this project in local Kubernetes minikube 
-
-- Start minikube 
-- Clone this project using the command
-```bash
-git clone https://github.com/sumitNITS/WebStickyNotes.git
-```
-- cd to WebStickyNotes
-- Run the below commands 
-```bash
-kubectl apply -f stickynotes-deployment.yml
-```
-
-```bash
-kubectl apply -f stickynotes-service.yml
-```
-
-```bash
-kubectl port-forward service/stickynotes-deployment <port>:8000
-```
-
-Now access the Sticky Notes application using "localhost":"port" OR "ip-of-machine":"port" 🚀
-
 
 
 
