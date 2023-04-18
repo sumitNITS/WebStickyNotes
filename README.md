@@ -50,6 +50,10 @@ Now visit the URL http://127.0.0.1:8000/ and explore the Sticky Notes applicatio
 
 ### Instructions to run this project as Docker container
 
+- Clone this project using the command
+```bash
+git clone https://github.com/sumitNITS/WebStickyNotes.git
+```
 - cd to WebStickyNotes
 - Build an image out of Dockerfile using the command 
 ```bash
@@ -70,6 +74,10 @@ docker run -d -p <port>:8000 --name stickynotes sumit0058/stickynotes:1.0
 ### Instructions to run this project in local Kubernetes minikube 
 
 - Start minikube 
+- Clone this project using the command
+```bash
+git clone https://github.com/sumitNITS/WebStickyNotes.git
+```
 - cd to WebStickyNotes
 - Run the below commands 
 ```bash
